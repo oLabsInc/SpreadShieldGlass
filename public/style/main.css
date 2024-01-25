@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+:root {
+    --blue: rgb(68, 90, 254);
+    --spreadBlue: rgb(7, 212, 255);
+    --spreadBlueA: rgba(7, 212, 255, 0.5);
+    --spreadBlueA2: rgba(7, 214, 255, 0.2);
+    --pink: rgb(221, 70, 176);
+    --red: rgb(218, 66, 69);
+    --yellow: rgb(228, 230, 55);
+    --orange: rgb(255, 177, 22);
+    --green: rgb(65, 212, 50);
+    --white: rgb(210, 250, 255);
+    --black: rgb(0, 0, 0);
+
+    --glass1: radial-gradient(circle,var(--spreadBlueA2) 0%, rgba(174, 233, 238, 0.25) 50%, rgba(116, 213, 243, 0.13) 100%);
+}
+
+
+
+
+
+body {
+    background: var(--black);
+    color: rgb(240, 248, 255);
+}
+.orbitron-text {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+#backgroundImg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -9999;
+}
+
+#backgroundImg img{
+    min-width: 100vw;
+    opacity: 0;
+}
+
+#spreadshieldHeaderBar {
+    background: var(--glass1);
+    padding: 0.25rem;
+    margin-top: 0.25rem;
+    width: 75%;
+    margin-inline: auto;
+    border-radius: 1rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    overflow: hidden;
+    /* border: solid 1px var(--spreadBlue); */
+    box-shadow: inset 0 8px 20px var(--spreadBlueA), 0 4px 6px var(--spreadBlueA2);
+}
+
+#spreadshieldHeaderBar h1 {
+    text-align: center;
+    padding: 0.25rem;
+    font-weight: normal;
+    user-select: none;
+}
+
+#spreadshieldFooterBar {
+    background: var(--glass1);
+    padding: 0.25rem;
+    position: fixed;
+    bottom: 0.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    border-radius: 1rem;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    box-shadow: inset 0 -8px 20px var(--spreadBlueA), 0 -4px 6px var(--spreadBlueA2);
+}
+
+#spreadshieldFooterBar h1 {
+    text-align: center;
+    padding: 0.25rem;
+    font-weight: normal;
+    user-select: none;
+}
